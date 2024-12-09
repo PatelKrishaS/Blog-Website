@@ -4,12 +4,14 @@ body{
   margin: 20px auto;
   padding: 0 20px;
   font-family: 'Noto Serif', serif;
+  /* background-image: url('.//img.avif'); */
+  background-color: #FFE6A7;
 }
-p, h1, h2, h3, a, ul{
+p, h1, h2, h3, a, ul, label{
   margin: 0;
   padding: 0;
   text-decoration: none;
-  color: #222;
+  color: #432818;
 }
 
 /* nav & footer styles */
@@ -18,7 +20,7 @@ nav{
   justify-content: space-between;
   margin-bottom: 60px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 4px solid #BB9457;
   text-transform: uppercase;
 }
 nav ul{
@@ -34,11 +36,11 @@ nav h1{
   font-size: 3em;
 }
 nav p, nav a{
-  color: #777;
+  color: #432818;
   font-weight: 300;
 }
 footer{
-  color: #777;
+  color: #99582A;
   text-align: center;
   margin: 80px auto 20px;
 }
@@ -58,7 +60,7 @@ h3{
   display: block;
   margin: 40px 0;
   padding-left: 30px;
-  border-left: 6px solid crimson;
+  border-left: 7px solid #6F1D1B;
 }
 .blogs a:hover h3{
    color: crimson;
@@ -91,6 +93,7 @@ h3{
   width: 100%;
   margin: 10px 0;
   padding: 8px;
+  background-color: #FED8B1;
 }
 .create-blog label{
   display: block;
@@ -101,10 +104,14 @@ textarea{
 }
 .create-blog button{
   margin-top: 20px;
-  background: crimson;
+  margin-left: 144px;
+  background: #6F1D1B;
   color: white;
-  padding: 6px;
+  padding: 11px;
+  padding-left: 20px;
+  padding-right: 20px;
   border: 0;
+  border-radius: 6px;
   font-size: 1.2em;
   cursor: pointer;
 }
