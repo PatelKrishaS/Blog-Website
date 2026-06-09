@@ -2,13 +2,15 @@ const express = require('express');
 const morgan = require('morgan');
 const mongoose = require('mongoose');
 const blogRoutes = require('./routes/blogRoutes')
+require('dotenv').config();
 
 
 //Express app
 const app = express();
 
 //Connect to MongoDB
-const dbURI = 'mongodb+srv://net-ninja:demo%40123@net-ninja-cluster.h2tcdyx.mongodb.net/node-tuts?retryWrites=true&w=majority&appName=net-ninja-cluster';
+// const dbURI = 'mongodb+srv://net-ninja:demo%40123@net-ninja-cluster.h2tcdyx.mongodb.net/node-tuts?retryWrites=true&w=majority&appName=net-ninja-cluster';
+const dbURI = process.env.MONGO_URI
 
 // mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
 mongoose.connect(dbURI)
