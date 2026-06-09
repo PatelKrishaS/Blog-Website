@@ -9,7 +9,6 @@ require('dotenv').config();
 const app = express();
 
 //Connect to MongoDB
-// const dbURI = 'mongodb+srv://net-ninja:demo%40123@net-ninja-cluster.h2tcdyx.mongodb.net/node-tuts?retryWrites=true&w=majority&appName=net-ninja-cluster';
 const dbURI = process.env.MONGO_URI
 
 // mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
